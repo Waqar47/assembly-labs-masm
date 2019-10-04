@@ -33,9 +33,29 @@ main PROC
 	call crlf
 
 	;divison
-	mov eax,
+	mov eax,n1
+	mov ebx,n2
+	mov edx,0
+	div ebx
+
+	;MOVE remainder to non-use register
+	mov ebx,edx
+
+	;PRINT DIVISION
 	mov edx,OFFSET division
 	call writestring
+	call writedec
+	call crlf
+
+	
+	;PRINT REMAINDER
+	mov edx,OFFSET rem
+	call writestring
+	mov eax,ebx
+	call writedec
+	call crlf
+
+
 
 
 
