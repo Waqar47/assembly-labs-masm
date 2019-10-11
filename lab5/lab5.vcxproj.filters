@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="stars_with_labels.asm">
+    <MASM Include="duplicate_var.asm">
       <Filter>Source Files</Filter>
     </MASM>
   </ItemGroup>
